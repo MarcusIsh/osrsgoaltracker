@@ -3,7 +3,7 @@ class Character {
     public function addNew($db, $data) {
         $RSN = str_replace(' ','_',$data[0]['rsn']);
         
-        $characterCheck = $db->prepare("select * from characters where rsn = {$RSN} and active = 'Y'");
+        $characterCheck = $db->prepare("select * from characters where rsn = '{$RSN}' and active = 'Y'");
         $characterCheck->execute();
         
         if ($characterCheck->rowCount() <= 0) {
