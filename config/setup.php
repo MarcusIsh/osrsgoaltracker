@@ -8,7 +8,7 @@ session_start();
 Flight::set('flight.views.path', 'views');
 
 if( !defined( __DIR__ ) ) define( __DIR__, dirname(__FILE__) );
-include(__DIR__.'/../db_config.php');
+include(__DIR__.'/../../db_config.php');
 require_once(__DIR__ . 'models/Users.php');
 
 Flight::register('db', 'PDO', array('mysql:host=' . DBHOST . ';dbname=' . DBNAME, DBUSER, DBPASS ), function($db){
