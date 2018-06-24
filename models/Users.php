@@ -7,7 +7,7 @@
  */
 
 class Users {
-    public function register($db, $username, $password, $email) {
+    public function register($db, $username, $password, $email, $firstname, $lastname) {
         try {
             // check if username exists
             $emailCheck = $db->prepare("select * from users where email = '" . $email . "'");
@@ -21,7 +21,7 @@ class Users {
                    $passwordResetCode = crypt($password, "G0dASh0ftH3W0r1d");
 
                     // if there is no error below code run
-                    $userResult = $db->prepare("insert into users (username, password, passwordResetCode, email, create_datetime, edit_datetime) values ('{$username}', '{$cryptPass}', '{$passwordResetCode}', '{$email}', NOW(), NOW())");
+                    $userResult = $db->prepare("insert into users (username, password, passwordResetCode, email, firstname, lastname, create_datetime, edit_datetime) values ('{$username}', '{$cryptPass}', '{$passwordResetCode}', '{$email}', {$firstname}, {$lastname}S, NOW(), NOW())");
                     $userResult->execute();
 
 
