@@ -21,7 +21,7 @@ $userID = $_SESSION['userid'];
                         var response = $.parseJSON(data);
                         if (response.status == "success") {
                             $('#sendButton').css('display', 'none');
-                            $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>";
+                            $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>");
                         } else {
                             $('#status').html("<h5 class=\"alert alert-danger\"> ERROR </h5>";
                         }
