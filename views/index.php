@@ -224,7 +224,7 @@
               	  <h5 class="centered"><?php echo $firstName . " " . $lastName ?></h5>
               	  	
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="dashboard">
                           <i class="fa fa-dashboard"></i>
                           <span>Dashboard</span>
                       </a>
