@@ -284,7 +284,7 @@
                     } else {
                         for($i = 0; $i <= 4; $i++){
                             $newChar = '<li class="mt">
-                                            <a class="active" href="ajaxFormCall(\'addNewChar\'">
+                                            <a class="active" href="ajaxFormCall(\'addNewChar\')">
                                                 <i class="fa fa-plus-circle"></i>
                                                 <span>Add New Character</span>
                                             </a>
