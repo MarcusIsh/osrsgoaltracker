@@ -112,8 +112,8 @@ $app->route('POST /addNewChar', function() {
     $method = Flight::request()->data->method;
     $data = Flight::request()->data->data;
     $db = Flight::db();
-    $user = Flight::users();
-    
+    $character = Flight::character();
+
     switch ($method) {
         case "addNew":
             $result = $character->addNew($db, $data);
