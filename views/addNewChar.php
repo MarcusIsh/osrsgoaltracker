@@ -58,7 +58,7 @@ $userID = $_SESSION['userID'];
             </div>
         </div>
         <div class="col-sm-6"></div>
-        <input type="hidden" id="userID" name="userID" value="<?php echo $userID ?>" />
+        <input type="hidden" id="userID" name="userID" value="<?php echo $_SESSION['userID']; ?>" />
     </div>    
 </form>
 
