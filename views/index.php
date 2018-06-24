@@ -269,7 +269,7 @@
                        $i = 0;
                        foreach($cfound as $key => $value){
                             $char = '<li class="mt">
-                                            <a class="active" href="ajaxFormCall(viewChar);">
+                                            <a class="" href="ajaxFormCall(viewChar);">
                                                 <i class="fa fa-check"></i>
                                                 <span>'. $key['rsn'] .'</span>
                                             </a>
