@@ -1,5 +1,5 @@
 <?php
-
+    echo 'test';
         if (!isset($_SESSION['userid'])) {
             Flight::render('login');
             exit();
