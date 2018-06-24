@@ -7,7 +7,7 @@ $userID = $_SESSION['userid'];
     function addChar() {
 
 
-                var data = {method: "addNew", "data": [{rsn: $('#rsn').val(), accountType: $('#account_type').val(), userID: $userID}]};
+                var data = {method: "addNew", "data": [{rsn: $('#rsn').val(), accountType: $('#account_type').val(), userID: $('#userID').val()}]};
 
                 var url = '<?php echo HTTP_HOST; ?>' + '/addNewChar';
 //
@@ -58,6 +58,7 @@ $userID = $_SESSION['userid'];
             </div>
         </div>
         <div class="col-sm-6"></div>
+        <input type="hidden" id="userID" name="userID" value="<?php echo $userID ?>" />
     </div>    
 </form>
 
