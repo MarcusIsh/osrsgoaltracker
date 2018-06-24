@@ -102,4 +102,10 @@ $app->route('GET /dashboard', function() {
     //Flight::render('login', array());
     //}
 });
+$app->route('GET /logout', function() {
+    unset($_SESSION['jwt']);
+    unset($_SESSION['userid']);
+    Flight::redirect('login');
+    exit();
+});
 $app->start();
