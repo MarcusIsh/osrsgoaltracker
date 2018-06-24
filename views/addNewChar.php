@@ -23,7 +23,7 @@ $userID = $_SESSION['userid'];
                             $('#sendButton').css('display', 'none');
                             $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>");
                         } else {
-                            $('#status').html("<h5 class=\"alert alert-danger\"> ERROR </h5>";
+                            $('#status').html("<h5 class=\"alert alert-danger\"> ERROR </h5>");
                         }
                     },
                     error: function () {
