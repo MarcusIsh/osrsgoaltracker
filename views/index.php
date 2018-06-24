@@ -647,7 +647,7 @@
                       		<img class="img-circle" src="assets/img/ui-sam.jpg" width="35px" height="35px" align="">
                       	</div>
                       	<div class="details">
-                      		<p><a href="#">Marcel Newman</a><br/>
+                      		<p><a href="#"><?php echo $firstName . " " . $lastName ?></a><br/>
                       		   <muted>Available</muted>
                       		</p>
                       	</div>
