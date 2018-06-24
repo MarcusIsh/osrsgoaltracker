@@ -66,7 +66,7 @@ $userID = $_SESSION['userid'];
 <div class='row'>
     <center>
         <div id='sendContainer' class="col-sm-6">
-            <button id="sendButton"  type="button" class="btn btn-primary" onclick='contactUs();'>Submit Inquiry</button>
+            <button id="sendButton"  type="button" class="btn btn-primary" onclick='addChar();'>Submit Inquiry</button>
             <div id="status"></div>
         </div>
     </center>
