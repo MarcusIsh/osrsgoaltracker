@@ -1,6 +1,7 @@
 <?php
 
 $userID = $_SESSION['userID'];
+echo $_SESSION;
 ?>
 
 <script>
