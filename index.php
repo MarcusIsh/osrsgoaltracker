@@ -64,7 +64,7 @@ $app->route('POST /login', function() {
                          $_SESSION['userid'] = $return['userid'];
                          $result = $db->prepare("SELECT usertype FROM users WHERE id = {$_SESSION['userid']}");
                          $result->execute();
-                         $_SESSION['usertype'] = mysql_fetch_row($result);
+                         $_SESSION['usertype'] = $result->fetchAll();
                          
                          //$unencodedArray = ['jwt' => $jwt];
                          $_SESSION['jwt'] = $jwt;  // Store token in session var so we can get it later
