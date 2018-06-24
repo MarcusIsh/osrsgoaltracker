@@ -379,6 +379,7 @@
 	
 	<script type="application/javascript">
         $(document).ready(function () {
+            ajaxFormCall('dashboard');
             $("#date-popover").popover({html: true, trigger: "manual"});
             $("#date-popover").hide();
             $("#date-popover").click(function (e) {
