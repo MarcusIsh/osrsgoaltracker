@@ -11,8 +11,8 @@
         $userCount->execute();
         $row = $userCount->fetchAll();
         for ($u=0;$u<count($row);$u++) {
-                $firstName = $row[$u]['firstName'];
-                $lastName = $row[$u]['lastName'];
+                $firstName = $row[$u]['firstname'];
+                $lastName = $row[$u]['lastname'];
         }
 
         $jwt = $_SESSION['jwt'];
