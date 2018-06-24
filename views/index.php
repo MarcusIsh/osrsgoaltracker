@@ -221,7 +221,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Marcel Newman</h5>
+              	  <h5 class="centered"><?php echo $firstName . " " . $lastName ?></h5>
               	  	
                   <li class="mt">
                       <a class="active" href="index.html">
@@ -647,7 +647,7 @@
                       		<img class="img-circle" src="assets/img/ui-sam.jpg" width="35px" height="35px" align="">
                       	</div>
                       	<div class="details">
-                      		<p><a href="#"><?php echo $firstName . " " . $lastName ?></a><br/>
+                      		<p><a href="#">Marcel Newman</a><br/>
                       		   <muted>Available</muted>
                       		</p>
                       	</div>
