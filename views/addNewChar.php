@@ -9,7 +9,7 @@ $userID = $_SESSION['userid'];
 
                 var data = {method: "addNew", "data": [{rsn: $('#rsn').val(), accountType: $('#account_type').val(), userID: $('#userID').val()}]};
 
-                var url = 'osrs.develocode.com' + '/addNewChar';
+                var url = '/addNewChar';
 //
                 $.ajax({
                     url: url,
