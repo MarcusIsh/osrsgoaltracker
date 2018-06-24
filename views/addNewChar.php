@@ -1,7 +1,10 @@
 <?php
+use \Firebase\JWT\JWT;
 
-$userID = $_SESSION['userID'];
-echo $_SESSION;
+require '../vendor/autoload.php';
+
+if( !defined( __DIR__ ) ) define( __DIR__, dirname(__FILE__) );
+require_once(__DIR__ . '/../config/setup.php');
 ?>
 
 <script>
