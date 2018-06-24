@@ -62,8 +62,8 @@ $app->route('POST /login', function() {
                           );
 
                          $_SESSION['userid'] = $return['userid'];
-                         $query = "SELECT usertype FROM users WHERE id = {$_SESSION['userid']}";
-                         $result = mysqli_query($query);
+                         $result = $db->prepare("SELECT usertype FROM users WHERE id = {$_SESSION['userid']}");
+                         $result->execute();
                          $_SESSION['usertype'] = mysql_fetch_row($result);
                          
                          //$unencodedArray = ['jwt' => $jwt];
