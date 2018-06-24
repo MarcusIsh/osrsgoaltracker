@@ -275,7 +275,7 @@
                                             </a>
                                         </li>';
                             $i++;
-                            if($i <= 5){
+                            if($i <= 4){
                                 echo $char;
                             } else {
                                 break;
