@@ -7,7 +7,7 @@ $userID = $_SESSION['userid'];
     function addChar() {
 
 
-                var data = {method: "addNew", "data": [{rsn: $('#rsn').val(), accountType: $('#account_type').val()}]};
+                var data = {method: "addNew", "data": [{rsn: $('#rsn').val(), accountType: $('#account_type').val(), userID: $userID}]};
 
                 var url = '<?php echo HTTP_HOST; ?>' + '/addNewChar';
 //
