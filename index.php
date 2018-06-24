@@ -93,4 +93,11 @@ $app->route('POST /register', function() {
         }
 
 });
+$app->route('GET /dashboard', function() {
+    //if (is_authorized()) {
+    Flight::render('index', array());
+    //} else {
+    //Flight::render('login', array());
+    //}
+});
 $app->start();
