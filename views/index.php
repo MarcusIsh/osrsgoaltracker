@@ -7,7 +7,7 @@
 
         $db = Flight::db();
         $user = Flight::users();
-        $userCount = $db->prepare( "select * from users left join members on members.userID = users.id where users.id = '" . $_SESSION['userid'] . "' and users.status = 'Active'" );
+        $userCount = $db->prepare( "select * from users where id = '" . $_SESSION['userid'] . "' and active = 'Y'" );
         $userCount->execute();
         $row = $userCount->fetchAll();
         for ($u=0;$u<count($row);$u++) {
