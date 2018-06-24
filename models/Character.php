@@ -8,7 +8,7 @@ class Character {
         
         if ($characterCheck->rowCount() <= 0) {
             $osrsAPI ="http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=";
-            $hsLink = $osrsAPI . $datap[0]['rsn'];
+            $hsLink = $osrsAPI . $RSN;
             
             $characterAdd = $db->prepare("insert into characters(rsn, userID, characterType, highScoreLink, active) VALUES ('{$RSN}', {$data[0]['userID']}, '{$data[0]['accountType']}','{$hsLink}', 'Y'");
             if($characterAdd->execute()){     
