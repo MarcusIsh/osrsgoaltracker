@@ -46,7 +46,37 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    
     <![endif]-->
+     <script>
+
+             // Main call to change main content area based on menu item selected
+             function ajaxFormCall(form) {
+               var host = location.protocol+'//'+window.location.hostname;
+               var url = host+'/views/'+form+'.php';
+
+               console.log(host);
+
+               $.ajax({
+                  type: "GET",
+                  url: url,
+                  dataType: "html",
+                  async: false,
+                  success: function(data){
+                     $("#replaced-content").html(data);
+                     $("#replaced-content").find("script").each(function(i) {
+                        eval($(this).text());
+                     });
+                  },
+                  error: function() {
+                     $("#errorAlertTitle").html("Error");
+                     $("#errorAlertBody").html("Can't Get Template");
+                     $("#errorAlert").modal('show');
+                     //alert("Can't Get Template");
+                  }
+               });
+             }
+    </script>
   </head>
 
   <body>
@@ -230,69 +260,40 @@
                       </a>
                   </li>
 
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
-                          <li><a  href="buttons.html">Buttons</a></li>
-                          <li><a  href="panels.html">Panels</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-cogs"></i>
-                          <span>Components</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="calendar.html">Calendar</a></li>
-                          <li><a  href="gallery.html">Gallery</a></li>
-                          <li><a  href="todo_list.html">Todo List</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-book"></i>
-                          <span>Extra Pages</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-tasks"></i>
-                          <span>Forms</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="form_component.html">Form Components</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class=" fa fa-bar-chart-o"></i>
-                          <span>Charts</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="morris.html">Morris</a></li>
-                          <li><a  href="chartjs.html">Chartjs</a></li>
-                      </ul>
-                  </li>
+                  <?php
+                    $characterCount = $db->prepare("select * from characters where userID = {$_SESSION['userid']} and active = 'Y'");
+                    $characterCount->execute();
+                    
+                    if ($characterCount->rowCount() > 0) {
+                       $cFound = $characterCount->fetchAll();
+                       $i = 0;
+                       foreach($cfound as $key => $value){
+                            $char = '<li class="mt">
+                                            <a class="active" href="ajaxFormCall(viewChar);">
+                                                <i class="fa fa-check"></i>
+                                                <span>'. $key['rsn'] .'</span>
+                                            </a>
+                                        </li>';
+                            $i++;
+                            if($i <= 5){
+                                echo $char;
+                            } else {
+                                break;
+                            }
+                        }
+                    } else {
+                        for($i = 0; $i <= 5; $i++){
+                            $newChar = '<li class="mt">
+                                            <a class="active" href="ajaxFormCall(addNewChar);">
+                                                <i class="fa fa-plus-circle"></i>
+                                                <span>Add New Character</span>
+                                            </a>
+                                        </li>';
+                            echo $newChar;
+                        }
+                    }
+                  
+                  ?>
 
               </ul>
               <!-- sidebar menu end-->
