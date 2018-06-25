@@ -32,6 +32,8 @@ $app->route('POST /login', function() {
     $db = Flight::db();
     $return = json_decode($user->login($db,$username,$password),true);
     if ($return['status'] == "success") {
+        
+        session_start();
                             //$tokenId    = base64_encode(mcrypt_create_iv(32)); // mcrypt_create_iv is depricated in PHP 7.1
                             $tokenId    = base64_encode(random_bytes(32));
                             $issuedAt   = time();
@@ -106,6 +108,7 @@ $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
     unset($_SESSION['userid']);
     Flight::redirect('login');
+    session_destroy();
     exit();
 });
 $app->route('POST /addNewChar', function() {
