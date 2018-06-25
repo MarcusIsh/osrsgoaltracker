@@ -12,7 +12,7 @@ $url = "http://services.runescape.com" . $data->link;
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $result = curl_exec($ch);
-print_r(json_decode($result));
+print_r($result->level);
 ?>
 <script>
     function getAllCharInfo() {
