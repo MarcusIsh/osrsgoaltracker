@@ -103,6 +103,7 @@ $app->route('GET /dashboard', function() {
     //} else {
     //Flight::render('login', array());
     //}
+    print_r($_SESSION);
 });
 $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
