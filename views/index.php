@@ -263,6 +263,7 @@
                   <?php
                     $characterCount = $db->prepare("select * from characters where userID = {$_SESSION['userid']} and active = 'Y'");
                     $characterCount->execute();
+                    $cFound = array();
                     
                     if ($characterCount->rowCount() > 0) {
                        $cFound = $characterCount->fetchAll();
