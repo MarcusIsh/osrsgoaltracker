@@ -63,7 +63,7 @@ $app->route('POST /login', function() {
                                     ALGORITHM // The algorithm to use for encoding
                           );
 
-                         $_SESSION['userid'] = $return['userid'];
+                         $_SESSION['userid'] = $return['id'];
                          $result = $db->prepare("SELECT usertype FROM users WHERE id = {$_SESSION['userid']}");
                          $result->execute();
                          $_SESSION['usertype'] = $result->fetchAll();
