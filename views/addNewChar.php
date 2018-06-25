@@ -42,7 +42,7 @@ require_once(__DIR__ . '/../config/setup.php');
 </script>
 <h3>Add Character to track!</h3>
 
-<form id="formApplication" class="register-form mt-lg">
+<form id="formApplication" class="register-form mt-lg-12">
     <div class="row">
         <div class="col-sm-6">
             <label for="rsn">Runescape Name</label>
