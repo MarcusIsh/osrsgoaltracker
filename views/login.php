@@ -17,7 +17,7 @@
 
 <div class="container">
     <div class="full-screen-video-wrap">
-        <video src="webvid.mp4" autoplay="true"></video>
+        <video src="assets/videos/webvid.mp4" autoplay="true"></video>
     </div>
    <div class="row">
     <div class="col-md-6 col-md-offset-3">
