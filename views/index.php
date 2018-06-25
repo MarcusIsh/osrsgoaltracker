@@ -339,7 +339,7 @@
           <section class="wrapper">
 
               <div class="row">
-                  <div id="replaced-content" class="col-lg-9 main-chart">
+                  <div id="replaced-content" class="col-lg-12 main-chart">
                   
                   	
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
