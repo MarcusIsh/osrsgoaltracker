@@ -103,7 +103,7 @@ $app->route('GET /dashboard', function() {
     //} else {
     //Flight::render('login', array());
     //}
-    print_r($_SESSION);
+    
 });
 $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
@@ -116,7 +116,7 @@ $app->route('POST /addNewChar', function() {
     $data = Flight::request()->data->data;
     $db = Flight::db();
     $character = Flight::character();
-
+    print_r($_SESSION);
     switch ($method) {
         case "addNew":
             $result = $character->addNew($db, $data);
