@@ -7,7 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-
+print_r($data);
 ?>
 <script>
     function getAllCharInfo() {
@@ -40,7 +40,9 @@ require_once(__DIR__ . '/../config/setup.php');
     }
 </script>
 <center><h3>Add Character to track!</h3></center>
-
+<div class="row">
+    
+</div>
 
 
 
