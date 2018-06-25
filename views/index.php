@@ -272,7 +272,7 @@
                        foreach($cFound as $key => $value){
 //                           print_r($key);
                             $char = '<li class="mt">
-                                            <a class="" onclick="ajaxFormCall("characterlookup")";>
+                                            <a class="" onclick="ajaxFormCall("characterlookup");">
                                                 <i class="fa fa-check"></i>
                                                 <span>'. $value['rsn'] .'</span>
                                             </a>
@@ -289,7 +289,7 @@
                     if($i <=4){
                         for($r = $i; $r <= 4; $r++){
                             $newChar = '<li class="mt">
-                                            <a class="active" onclick="ajaxFormCall(\'addNewChar\')">
+                                            <a class="active" onclick="ajaxFormCall(\'addNewChar\');">
                                                 <i class="fa fa-plus-circle"></i>
                                                 <span>Add New Character</span>
                                             </a>
