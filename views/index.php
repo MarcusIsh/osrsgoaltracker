@@ -267,10 +267,10 @@
                     $i = 0;
                     if ($characterCount->rowCount() > 0) {
                        $cFound = $characterCount->fetchAll();
-                       print_r($cFound);
+//                       print_r($cFound);
                        
                        foreach($cFound as $key => $value){
-                           print_r($key);
+//                           print_r($key);
                             $char = '<li class="mt">
                                             <a class="" href=\'ajaxFormCall("viewChar/'. $value['id'] .'");\'>
                                                 <i class="fa fa-check"></i>
