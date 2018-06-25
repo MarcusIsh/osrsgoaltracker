@@ -7,7 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-$url = "https://services.runescape.com" . $link;
+$url = "https://services.runescape.com" . $data->link;
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
