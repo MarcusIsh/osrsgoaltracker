@@ -285,7 +285,7 @@
                             }
                         }
                     } 
-                    print $i;
+                    
                     if($i <=4){
                         for($r = $i; $r <= 4; $r++){
                             $newChar = '<li class="mt">
