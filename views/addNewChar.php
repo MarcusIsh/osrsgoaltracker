@@ -28,8 +28,9 @@ require_once(__DIR__ . '/../config/setup.php');
                         var response = $.parseJSON(data);
                         console.log(response);
                         if (response.status == "success") {
-                            $('#sendButton').css('display', 'none');
-                            $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>");
+//                            $('#sendButton').css('display', 'none');
+//                            $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>");
+                                alert("Success!");
                         } else {
                             $('#status').html("<h5 class=\"alert alert-danger\"> ERROR </h5>");
                         }
