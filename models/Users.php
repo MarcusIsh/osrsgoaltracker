@@ -32,7 +32,7 @@ class Users {
                }
             } else {
                     return json_encode(array("status" => "fail", "message" => "user with that email address already exist"));
-            }
+            } 
 
         } catch (PDOException $e) { // The authorization query failed verification
 
