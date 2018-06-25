@@ -7,8 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-
-
+echo $_POST;
 ?>
 <script>
     function getAllCharInfo() {
