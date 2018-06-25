@@ -22,7 +22,7 @@ class Character {
                return json_encode(array("status" => "fail", "message" => "rsn already exist"));
         }
     }
-    public function getAll($db, $id, $userID) {
+    public function getAll($db, $id) {
         try{
             $getAll = $db->prepare("select * from characters where id = {$id}");
             $getAll->execute();
