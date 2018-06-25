@@ -26,6 +26,7 @@ require_once(__DIR__ . '/../config/setup.php');
                     async: false,
                     success: function (data) {
                         var response = $.parseJSON(data);
+                        console.log(response);
                         if (response.status == "success") {
                             $('#sendButton').css('display', 'none');
                             $('#status').html("<h5 class=\"alert alert-success\"> SUCCESS </h5>");
