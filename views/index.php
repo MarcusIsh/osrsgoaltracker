@@ -79,7 +79,7 @@
                           function ajaxFormCallCharacter(form, id, userID) {
 //               var host = location.protocol+'//'+window.location.hostname;
 //               var url = host+'/views/'+form+'.php?id='+id+'&userID='+userID;
-               var url = "/"+form+"/"+id+"/"+userid;
+               var url = "/"+form+"/"+id+"/"+userID;
 //               console.log(host);
 
                $.ajax({
