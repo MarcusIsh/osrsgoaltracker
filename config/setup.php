@@ -17,5 +17,10 @@ Flight::register('db', 'PDO', array('mysql:host=' . DBHOST . ';dbname=' . DBNAME
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 });
 
+if(ENVIRONMENT == 'development') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+}
+
 Flight::register('users', 'Users');
 Flight::register('character', 'Character');
