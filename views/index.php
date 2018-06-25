@@ -271,9 +271,9 @@
                        $i = 0;
                        foreach($cFound as $key => $value){
                             $char = '<li class="mt">
-                                            <a class="" href=\'ajaxFormCall("viewChar/'. $key['id'] .'");\'>
+                                            <a class="" href=\'ajaxFormCall("viewChar/'. $key[0]['id'] .'");\'>
                                                 <i class="fa fa-check"></i>
-                                                <span>'. $key['rsn'] .'</span>
+                                                <span>'. $key[0]['rsn'] .'</span>
                                             </a>
                                         </li>';
                             $i++;
