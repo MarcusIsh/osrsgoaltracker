@@ -34,8 +34,6 @@ print_r($_SESSION);
                         }
                     },
                     error: function () {
-                        var response = $.parseJSON(data);
-                        console.log(response.sql);
                         alert("There Was An Error Adding Link!");
 
                     }
