@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 <div class="container">
-    <div class="full-screen-video-wrap">
+<!--    <div class="full-screen-video-wrap">
         <video src="assets/videos/webvid.mp4" autoplay="true"></video>
-    </div>
+    </div>-->
    <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <div class="panel panel-login">
