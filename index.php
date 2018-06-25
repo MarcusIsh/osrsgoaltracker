@@ -105,6 +105,11 @@ $app->route('GET /dashboard', function() {
     //}
     
 });
+$app->route('GET /characterlookup/@id/@userid', function($id, $userid) {
+    Flight::render('characterlookup', array());
+
+    
+});
 $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
     unset($_SESSION['userid']);
