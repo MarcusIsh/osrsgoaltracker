@@ -1,7 +1,7 @@
 <?php
 use \Firebase\JWT\JWT;
 
-require '/var/www/osrsgt/vendor/autoload.php';
+require '/var/www/osrsgt/html/vendor/autoload.php';
 
 if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
