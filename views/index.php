@@ -76,6 +76,31 @@
                   }
                });
              }
+                          function ajaxFormCallCharacter(form, id, userID) {
+               var host = location.protocol+'//'+window.location.hostname;
+               var url = host+'/views/'+form+'.php?id='+id+'&userID='+userID;
+
+               console.log(host);
+
+               $.ajax({
+                  type: "GET",
+                  url: url,
+                  dataType: "html",
+                  async: false,
+                  success: function(data){
+                     $("#replaced-content").html(data);
+                     $("#replaced-content").find("script").each(function(i) {
+                        eval($(this).text());
+                     });
+                  },
+                  error: function() {
+                     $("#errorAlertTitle").html("Error");
+                     $("#errorAlertBody").html("Can't Get Template");
+                     $("#errorAlert").modal('show');
+                     //alert("Can't Get Template");
+                  }
+               });
+             }
     </script>
   </head>
 
@@ -272,7 +297,7 @@
                        foreach($cFound as $key => $value){
 //                           print_r($key);
                             $char = '<li class="mt">
-                                            <a class="" onclick=\'ajaxFormCall("characterlookup");\'>
+                                            <a class="" onclick=\'ajaxFormCallCharacter("characterlookup,'.$value['id'].','.$value['userID'].'");\'>
                                                 <i class="fa fa-check"></i>
                                                 <span>'. $value['rsn'] .'</span>
                                             </a>
