@@ -270,10 +270,11 @@
                        print_r($cFound);
                        $i = 0;
                        foreach($cFound as $key => $value){
+                           print_r($key);
                             $char = '<li class="mt">
                                             <a class="" href=\'ajaxFormCall("viewChar/'. $key[0]['id'] .'");\'>
                                                 <i class="fa fa-check"></i>
-                                                <span>'. $key[0]['rsn'] .'</span>
+                                                <span>'. $value[0]['rsn'] .'</span>
                                             </a>
                                         </li>';
                             $i++;
