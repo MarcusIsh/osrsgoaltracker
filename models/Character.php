@@ -9,13 +9,13 @@ class Character {
         if ($characterCheck->rowCount() <= 0) {
             $osrsAPI ="/m=hiscore_oldschool/index_lite.ws?player=";
             $hsLink = $osrsAPI . $RSN;
-            echo "insert into characters(rsn, userID, characterType, highScoreLink, active) VALUES ('{$RSN}', {$data[0]['userID']}, '{$data[0]['accountType']}','{$hsLink}', 'Y'";
+            $sql= "insert into characters(rsn, userID, characterType, highScoreLink, active) VALUES ('{$RSN}', {$data[0]['userID']}, '{$data[0]['accountType']}','{$hsLink}', 'Y'";
             $characterAdd = $db->prepare("insert into characters(rsn, userID, characterType, highScoreLink, active) VALUES ('{$RSN}', {$data[0]['userID']}, '{$data[0]['accountType']}','{$hsLink}', 'Y'");
             
             if($characterAdd->execute()){     
                 return json_encode(array("status" => "success"));
         } else {
-            return json_encode(array("status" => "fail", "message" => "there was an error"));
+            return json_encode(array("status" => "fail", "message" => "there was an error", "sql" => $sql));
         }
                 
         } else {
