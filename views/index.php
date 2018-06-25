@@ -51,10 +51,10 @@
      <script>
 
              // Main call to change main content area based on menu item selected
-             function ajaxFormCall(form) {
+             function ajaxFormCall(form,id,userid) {
 //               var host = location.protocol+'//'+window.location.hostname;
 //               var url = host+'/views/'+form+'.php';
-                 var url = "/"+form;
+                 var url = "/"+form+"/"+id+"/"+userid;
                console.log(host);
 
                $.ajax({
