@@ -109,7 +109,7 @@ $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $db = Flight::db();
     $character = Flight::character();
     $allData = $character->getAll($id);
-    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'data' => $allData));
+    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'data' => json_decode($allData)));
         
     
 });
