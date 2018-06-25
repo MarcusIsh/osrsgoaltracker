@@ -7,7 +7,12 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-print_r($data->link);
+$url = "https://services.runescape.com" . $link;
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+$result = curl_exec($ch);
+print_r($result);
 ?>
 <script>
     function getAllCharInfo() {
