@@ -274,7 +274,7 @@
                             $char = '<li class="mt">
                                             <a class="" href=\'ajaxFormCall("viewChar/'. $key[0]['id'] .'");\'>
                                                 <i class="fa fa-check"></i>
-                                                <span>'. $value[0]['rsn'] .'</span>
+                                                <span>'. $value['rsn'] .'</span>
                                             </a>
                                         </li>';
                             $i++;
