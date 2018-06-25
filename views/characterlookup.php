@@ -1,7 +1,7 @@
 <?php
 use \Firebase\JWT\JWT;
 
-require DOCUMENT_ROOT . '/vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 print_r($_SERVER);
 if (!defined(__DIR__))
