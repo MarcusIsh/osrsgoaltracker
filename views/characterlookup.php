@@ -3,12 +3,10 @@ use \Firebase\JWT\JWT;
 
 require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
-print_r($_SERVER);
 if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-print_r($_POST);
 ?>
 <script>
     function getAllCharInfo() {
