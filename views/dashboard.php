@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+echo $_SESSION;
 ?>
 
                   <div class="col-lg-9 main-chart">
