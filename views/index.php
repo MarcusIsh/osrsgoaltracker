@@ -268,7 +268,7 @@
                     if ($characterCount->rowCount() > 0) {
                        $cFound = $characterCount->fetchAll();
                        $i = 0;
-                       foreach($cfound as $key => $value){
+                       foreach($cFound as $key => $value){
                             $char = '<li class="mt">
                                             <a class="" href=\'ajaxFormCall("viewChar/'. $key['id'] .'");\'>
                                                 <i class="fa fa-check"></i>
