@@ -286,16 +286,17 @@
                         }
                     } 
                     print $i;
-//                        for($i = 0; $i <= 4; $i++){
-//                            $newChar = '<li class="mt">
-//                                            <a class="active" onclick="ajaxFormCall(\'addNewChar\')">
-//                                                <i class="fa fa-plus-circle"></i>
-//                                                <span>Add New Character</span>
-//                                            </a>
-//                                        </li>';
-//                            echo $newChar;
-//                        }
-                    
+                    if($i <=4){
+                        for($r = $i; $r <= 4; $r++){
+                            $newChar = '<li class="mt">
+                                            <a class="active" onclick="ajaxFormCall(\'addNewChar\')">
+                                                <i class="fa fa-plus-circle"></i>
+                                                <span>Add New Character</span>
+                                            </a>
+                                        </li>';
+                            echo $newChar;
+                        }
+                    }
                   
                   ?>
 
