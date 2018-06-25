@@ -6,7 +6,7 @@ require '../vendor/autoload.php';
 if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
-print_r($_SESSION);
+//print_r($_SESSION);
 ?>
 
 
