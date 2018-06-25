@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+
 date_default_timezone_set('America/New_York');
 
 ob_start();
