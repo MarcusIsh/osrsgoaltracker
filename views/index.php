@@ -264,7 +264,7 @@
                     $characterCount = $db->prepare("select * from characters where userID = {$_SESSION['userid']} and active = 'Y'");
                     $characterCount->execute();
                     $cFound = array();
-                    for($i = 0; $i <= 4; $i++){
+                    
                     if ($characterCount->rowCount() > 0) {
                        $cFound = $characterCount->fetchAll();
                        print_r($cFound);
@@ -284,7 +284,7 @@
                             }
                         }
                     } else {
-                        
+                        for($i = 0; $i <= 4; $i++){
                             $newChar = '<li class="mt">
                                             <a class="active" onclick="ajaxFormCall(\'addNewChar\')">
                                                 <i class="fa fa-plus-circle"></i>
