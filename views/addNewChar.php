@@ -40,7 +40,7 @@ require_once(__DIR__ . '/../config/setup.php');
                 });
     }
 </script>
-<h3>Add Character to track!</h3>
+<center><h3>Add Character to track!</h3></center>
 
 <form id="formApplication" class="register-form mt-lg-12">
     <div class="row">
