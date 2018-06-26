@@ -35,7 +35,7 @@ class Character {
                    $character['link'] = $row['highScoreLink'];
                    $character['characterType'] = $row['characterType'];
             }
-            return $character;
+            return $character['rsn'];
         } catch (PDOException $e) { // The authorization query failed verification
              return json_encode(array("status" => "failed",
                                                             "error" => "Catch Exception: " . $e->getMessage()
