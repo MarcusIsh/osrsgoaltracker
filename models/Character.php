@@ -41,11 +41,11 @@ class Character {
              ));
         }
     }
-    function getStats($name) {
+    function getStats($link) {
 		// Create an array of skills
 		$skills = array('Overall', 'Attack', 'Defence', 'Strength', 'Hitpoints', 'Ranged', 'Prayer', 'Magic', 'Cooking', 'Woodcutting', 'Fletching', 'Fishing', 'Firemaking', 'Crafting', 'Smithing', 'Mining', 'Herblore', 'Agility', 'Thieving', 'Slayer', 'Farming', 'Runecraft', 'Hunter', 'Construction', 'Summoning', 'Duel Tournament', 'Bounty Hunters', 'Bounty Hunter Rogues', 'Fist of Guthix');
 
-		$hs = @file_get_contents('http://hiscore.runescape.com/index_lite.ws?player=' . $name);
+		$hs = @file_get_contents('http://hiscore.runescape.com' . $link);
 		$out = Array();
 
 		if (! $hs)
