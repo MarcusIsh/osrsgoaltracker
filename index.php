@@ -108,11 +108,11 @@ $app->route('GET /dashboard', function() {
 $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $db = Flight::db();
     $character = Flight::character();
-    $json = $character->getAll($db, $id);
-    $allData = json_decode($json ,true);
-    $data = $allData['character'][0];
+    $allData = $character->getAll($db, $id);
     
-    $stats = $character->getStats($json);
+    $data = $allData['character'];
+    
+    $stats = $character->getStats($data['rsn']);
 //    print_r($stats);
     Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'data' => $data));
         
