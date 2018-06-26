@@ -44,7 +44,7 @@ class Character {
     function getStats($data) {
 		// Create an array of skills
 		
-                
+                $data = json_encode($data, true);
                 
 		$url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$data}&old_stats=1";
 
