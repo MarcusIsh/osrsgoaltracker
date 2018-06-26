@@ -110,7 +110,7 @@ $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $character = Flight::character();
     $json = $character->getAll($db, $id);
     $allData = json_decode($json);
-    $data = json_decode($allData->character[0]);
+    $data = json_decode(json_encode($allData->character[0]));
 //    $rsn = json_decode($data->rsn);
 //    $stats = $character->getStats($rsn);
 //    print_r($stats);
