@@ -6,8 +6,13 @@ require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
-print_r($stats);
-print_r($data);
+https://www.tip.it/runescape/json/hiscore_user?rsn='.$data->rsn.'&old_stats=1
+$url = "https://www.tip.it/runescape/json/hiscore_user?rsn='.$data->rsn.'&old_stats=1";
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+$result = curl_exec($ch);
+print_r(str_replace(" ", $result, "<br />"));
 ?>
 <script>
     function getAllCharInfo() {
