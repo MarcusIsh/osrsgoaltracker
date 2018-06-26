@@ -15,7 +15,7 @@ class Character {
             if($characterAdd->execute()){     
                 return json_encode(array("status" => "success"));
         } else {
-            return json_encode(array("status" => "fail", "message" => "there was an error", "sql" => $sql));
+            return array("status" => "fail", "message" => "there was an error", "sql" => $sql);
         }
                 
         } else {
