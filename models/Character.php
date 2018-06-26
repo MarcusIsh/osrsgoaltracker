@@ -34,7 +34,7 @@ class Character {
                    $character[] = array("rsn" => $row['rsn'], "link" => $row['highScoreLink'], "characterType" => $row['characterType']);
                }
             }
-            return json_encode(array("status" => "success", "character" => $character));
+            return array("status" => "success", "character" => $character);
         } catch (PDOException $e) { // The authorization query failed verification
              return json_encode(array("status" => "failed",
                                                             "error" => "Catch Exception: " . $e->getMessage()
