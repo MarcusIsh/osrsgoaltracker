@@ -45,7 +45,7 @@ class Character {
 		// Create an array of skills
 		$skills = array('Overall', 'Attack', 'Defence', 'Strength', 'Hitpoints', 'Ranged', 'Prayer', 'Magic', 'Cooking', 'Woodcutting', 'Fletching', 'Fishing', 'Firemaking', 'Crafting', 'Smithing', 'Mining', 'Herblore', 'Agility', 'Thieving', 'Slayer', 'Farming', 'Runecraft', 'Hunter', 'Construction', 'Summoning', 'Duel Tournament', 'Bounty Hunters', 'Bounty Hunter Rogues', 'Fist of Guthix');
 
-		$hs = @file_get_contents('http://hiscore.runescape.com' . $link);
+		$hs = @file_get_contents('http://services.runescape.com' . $link);
 		$out = Array();
 
 		if (! $hs)
