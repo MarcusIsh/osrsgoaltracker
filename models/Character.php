@@ -48,10 +48,12 @@ class Character {
 		$hs = @file_get_contents('http://services.runescape.com' . $link);
 		$out = Array();
 
-		if (! $hs)
+		if (! $hs){
 			return null;
-		if (strpos($hs, '404 - Page not found'))
+                }
+		if (strpos($hs, '404 - Page not found')){
 			return null;
+                }
 
 		$stats = explode("\n", $hs);
 
