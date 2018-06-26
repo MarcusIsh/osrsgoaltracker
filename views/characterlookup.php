@@ -12,7 +12,7 @@ $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$data->rsn}&old_stat
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $result = curl_exec($ch);
-print_r(str_replace(" ", $result, "<br />"));
+print_r(json_decode($result));
 ?>
 <script>
     function getAllCharInfo() {
