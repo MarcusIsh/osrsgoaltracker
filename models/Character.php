@@ -45,7 +45,7 @@ class Character {
 		// Create an array of skills
 		$skills = array('Overall', 'Attack', 'Defence', 'Strength', 'Hitpoints', 'Ranged', 'Prayer', 'Magic', 'Cooking', 'Woodcutting', 'Fletching', 'Fishing', 'Firemaking', 'Crafting', 'Smithing', 'Mining', 'Herblore', 'Agility', 'Thieving', 'Slayer', 'Farming', 'Runecraft', 'Hunter', 'Construction', 'Summoning', 'Duel Tournament', 'Bounty Hunters', 'Bounty Hunter Rogues', 'Fist of Guthix');
 
-		$url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$data['rsn']}&old_stats=1";
+		$url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$data['character'][0]['rsn']}&old_stats=1";
 
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
