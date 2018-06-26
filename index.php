@@ -109,8 +109,8 @@ $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $db = Flight::db();
     $character = Flight::character();
     $json = $character->getAll($db, $id);
-    $data = json_decode($json ,true);
-    
+    $allData = json_decode($json ,true);
+    $data = $allData['character'][0];
     
 //    $stats = $character->getStats($data['rsn']);
 //    print_r($stats);
