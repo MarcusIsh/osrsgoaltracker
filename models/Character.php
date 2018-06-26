@@ -31,11 +31,11 @@ class Character {
             if($getAll->rowCount() > 0){
                $row = $getAll->fetch();
                
-                   $character['rsn'] = $row['rsn'];
+                   $rsn = $row['rsn'];
                    $character['link'] = $row['highScoreLink'];
                    $character['characterType'] = $row['characterType'];
             }
-            return $character['rsn'];
+            return $rsn;
         } catch (PDOException $e) { // The authorization query failed verification
              return json_encode(array("status" => "failed",
                                                             "error" => "Catch Exception: " . $e->getMessage()
