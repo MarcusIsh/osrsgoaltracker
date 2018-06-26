@@ -41,4 +41,29 @@ class Character {
              ));
         }
     }
+    function getStats($name) {
+		// Create an array of skills
+		$skills = array('Overall', 'Attack', 'Defence', 'Strength', 'Hitpoints', 'Ranged', 'Prayer', 'Magic', 'Cooking', 'Woodcutting', 'Fletching', 'Fishing', 'Firemaking', 'Crafting', 'Smithing', 'Mining', 'Herblore', 'Agility', 'Thieving', 'Slayer', 'Farming', 'Runecraft', 'Hunter', 'Construction', 'Summoning', 'Duel Tournament', 'Bounty Hunters', 'Bounty Hunter Rogues', 'Fist of Guthix');
+
+		$hs = @file_get_contents('http://hiscore.runescape.com/index_lite.ws?player=' . $name);
+		$out = Array();
+
+		if (! $hs)
+			return null;
+		if (strpos($hs, '404 - Page not found'))
+			return null;
+
+		$stats = explode("\n", $hs);
+
+		// Loop through the skills
+		for($i = 0; $i<count($skills);$i++) {
+			// Explode each skill into 3 values - rank, level, exp
+			$stat = explode(',', $stats[$i]);
+			$out[$skills[$i]] = Array();
+			$out[$skills[$i]]['rank'] = $stat[0];
+			$out[$skills[$i]]['level'] = $stat[1];
+			$out[$skills[$i]]['xp'] = $stat[2];
+		}
+	return $out;
+	}
 }
