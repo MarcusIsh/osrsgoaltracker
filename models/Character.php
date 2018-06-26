@@ -26,16 +26,15 @@ class Character {
         try{
             $getAll = $db->prepare("select * from characters where id = {$id}");
             $getAll->execute();
-            $character = array();
+
 
             if($getAll->rowCount() > 0){
-               $row = $getAll->fetch();
-               
-                   $rsn = $row['rsn'];
-                   $character['link'] = $row['highScoreLink'];
-                   $character['characterType'] = $row['characterType'];
+               while($row = $getAll->fetch())
+               {
+                   $character[] = array("rsn" => $row['rsn'], "link" => $row['highScoreLink'], "characterType" => $row['characterType']);
+               }
             }
-            return $rsn;
+            return json_encode(array("status" => "success", "character" => $character));
         } catch (PDOException $e) { // The authorization query failed verification
              return json_encode(array("status" => "failed",
                                                             "error" => "Catch Exception: " . $e->getMessage()
