@@ -61,12 +61,12 @@ class Character {
                 $decode = json_decode($result, true);
 		
                 
-                return $decode;
+                return $decode['stats'];
 //                $allSkills = $decode->stats;
 //                $skills = array();
 //                $out = Array();
 //                
-//                foreach($allSkills as $skill => $value){
+//                foreach($decode as $skill => $value){
 //                    $skills[$skill][] = $value['value'];
 //                    
 //                }
