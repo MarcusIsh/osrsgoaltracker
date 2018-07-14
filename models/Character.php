@@ -41,12 +41,16 @@ class Character {
              ));
         }
     }
-    function getStats($data) {
+    function getStats($id) {
 		// Create an array of skills
 		
+                $charInfo = "select rsn, characterType from characters where id = ".$id.";";
+                $charInfo->execute();
+                
+                $row = $charInfo->fetch();
                 
                 
-		$url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$data}&old_stats=1";
+		$url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$row['rsn']}&old_stats=1";
 
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
