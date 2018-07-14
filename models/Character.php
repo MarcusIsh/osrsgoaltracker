@@ -55,13 +55,13 @@ class Character {
                 
                 $url = "http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player={$row['rsn']}";
 
-                $ch = curl_init($url);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-                $result = curl_exec($ch);
-                $decode = json_decode($result, true);
-		
+//                $ch = curl_init($url);
+//                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+//                $result = curl_exec($ch);
+//                $decode = json_decode($result, true);
+//		
                 
-////                return $decode['stats'];
+//                return $decode['stats'];
 ////                $allSkills = $decode->stats;
 //                $skills = array();
 ////                $out = Array();
@@ -71,6 +71,11 @@ class Character {
 //                    $skills[$skill]['level'] = $value['level'];
 //                    $skills[$skill]['exp'] = $value['exp'];
 //                }
+                
+                $skills = array('Overall', 'Attack', 'Defence', 'Strength', 'Hitpoints', 'Ranged', 'Prayer', 'Magic', 'Cooking', 'Woodcutting', 'Fletching', 'Fishing', 'Firemaking', 'Crafting', 'Smithing', 'Mining', 'Herblore', 'Agility', 'Thieving', 'Slayer', 'Farming', 'Runecraft', 'Hunter', 'Construction', 'Summoning', 'Duel Tournament', 'Bounty Hunters', 'Bounty Hunter Rogues', 'Fist of Guthix');
+
+		$hs = @file_get_contents($url);
+		$out = Array();
 
 		if (! $hs){
 			return null;
@@ -90,6 +95,6 @@ class Character {
 			$out[$skills[$i]]['level'] = $stat[1];
 			$out[$skills[$i]]['xp'] = $stat[2];
 		}
-	return $skills;
+	return $out;
 	}
 }
