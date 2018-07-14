@@ -34,7 +34,7 @@ class Character {
                    $character[] = array("rsn" => $row['rsn'], "characterType" => $row['characterType']);
                }
             }
-            $stats = $this->getCharName($character['rsn']);
+            $stats = $this->getCharName($character);
             
             return json_encode(array("status" => "success", "character" => $character, "stats" => $stats), true);
         } catch (PDOException $e) { // The authorization query failed verification
@@ -43,7 +43,7 @@ class Character {
              ));
         }
     }
-    function getCharName($rsn) {
+    function getCharName($character) {
 		// Create an array of skills
 //		
 //                $charInfo = $db->prepare("select rsn, characterType from characters where id = {$id}");
@@ -52,7 +52,7 @@ class Character {
 //                $row = $charInfo->fetch();
                 
                 
-                $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$rsn}&old_stats=1";
+                $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={}&old_stats=1";
 
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
