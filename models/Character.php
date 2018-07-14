@@ -58,7 +58,7 @@ class Character {
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
                 $result = curl_exec($ch);
-                $decode = json_decode($result);
+                $decode = json_decode($result, true);
 		
                 
                 return $decode;
