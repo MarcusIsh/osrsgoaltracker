@@ -67,7 +67,7 @@ class Character {
 //                $out = Array();
 //                
                 foreach($decode['stats'] as $skill => $value){
-                    $skills[$skill][] = $value['level'];
+                    $skills[] = $value['level'];
                     
                 }
 
