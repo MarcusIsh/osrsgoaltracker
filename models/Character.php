@@ -61,15 +61,15 @@ class Character {
                 $decode = json_decode($result, true);
 		
                 
-                return $decode['stats'];
+//                return $decode['stats'];
 //                $allSkills = $decode->stats;
-//                $skills = array();
+                $skills = array();
 //                $out = Array();
 //                
-//                foreach($decode as $skill => $value){
-//                    $skills[$skill][] = $value['value'];
-//                    
-//                }
+                foreach($decode['stats'] as $skill => $value){
+                    $skills[$skill][] = $value['value'];
+                    
+                }
 
 //		if (! $hs){
 //			return null;
@@ -89,6 +89,6 @@ class Character {
 //			$out[$skills[$i]]['level'] = $stat[1];
 //			$out[$skills[$i]]['xp'] = $stat[2];
 //		}
-//	return $skills;
+	return $skills;
 	}
 }
