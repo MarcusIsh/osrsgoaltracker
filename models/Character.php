@@ -65,10 +65,11 @@ class Character {
 //                $allSkills = $decode->stats;
                 $skills = array();
 //                $out = Array();
-//                
+                $skills['rsn'] = $decode['rsn'];
+                
                 foreach($decode['stats'] as $skill => $value){
                     $skills[$skill] = $value['level'];
-                    
+                    $skills[$skill . '_exp'] = $value['exp'];
                 }
 
 //		if (! $hs){
