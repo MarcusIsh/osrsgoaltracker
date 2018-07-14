@@ -113,7 +113,7 @@ $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $data = $allData['character'][0];
     
     
-//    $stats = $character->getStats($allData);
+    $stats = $character->getStats($data);
 //    print_r($stats);
     Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'data' => $data));
         
