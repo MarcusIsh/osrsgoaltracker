@@ -7,7 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-
+print_r($stats);
 ?>
 <script>
     function getAllCharInfo() {
@@ -41,16 +41,7 @@ require_once(__DIR__ . '/../config/setup.php');
 </script>
 <center><h3><?php echo $stats['rsn']; ?></h3></center>
 <div class="row">
-    <div class="col-6">
-        <table>
-            <th>Skill</th>
-            <th>Level</th>
-            <th>Exp</th>
-            <tr>
-                  
-            </tr>
-        </table>
-    </div>
+    
 </div>
 
 
