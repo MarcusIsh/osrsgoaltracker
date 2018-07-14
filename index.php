@@ -111,7 +111,7 @@ $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     
     $stats = $char->getCharName($db, $id);
     
-    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID));
+    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
         
     
 });
