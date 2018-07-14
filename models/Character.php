@@ -56,9 +56,9 @@ class Character {
                 $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$row['rsn']}&old_stats=1";
 
                 $ch = curl_init($url);
-//                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-//                $result = curl_exec($ch);
-//                $decode = json_decode($result);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+                $result = curl_exec($ch);
+                $decode = json_decode($result);
 		
 //                $allSkills = $decode->stats;
 //                $skills = array();
