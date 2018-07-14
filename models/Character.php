@@ -41,7 +41,7 @@ class Character {
              ));
         }
     }
-    function getStats(&$db, $id) {
+    function getStats($id) {
 		// Create an array of skills
 		
                 $charInfo = $db->prepare("select rsn, characterType from characters where id = {$id}");
