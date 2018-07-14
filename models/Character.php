@@ -93,7 +93,7 @@ class Character {
 			$out[$skills[$i]] = Array();
 			$out[$skills[$i]]['rank'] = $stat[0];
 			$out[$skills[$i]]['level'] = $stat[1];
-			$out[$skills[$i]]['xp'] = $stat[2];
+//			$out[$skills[$i]]['xp'] = $stat[2];
 		}
 	return $out;
 	}
