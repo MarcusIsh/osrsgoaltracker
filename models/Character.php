@@ -53,21 +53,21 @@ class Character {
                 $row = $charInfo->fetch();
                 
                 
-                $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={}&old_stats=1";
-
-                $ch = curl_init($url);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-                $result = curl_exec($ch);
-                $decode = json_decode($result);
+//                $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={}&old_stats=1";
+//
+//                $ch = curl_init($url);
+//                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+//                $result = curl_exec($ch);
+//                $decode = json_decode($result);
 		
-                $allSkills = $decode->stats;
-                $skills = array();
-                $out = Array();
-                
-                foreach($allSkills as $skill => $value){
-                    $skills[$skill][] = $value['value'];
-                    
-                }
+//                $allSkills = $decode->stats;
+//                $skills = array();
+//                $out = Array();
+//                
+//                foreach($allSkills as $skill => $value){
+//                    $skills[$skill][] = $value['value'];
+//                    
+//                }
 
 //		if (! $hs){
 //			return null;
@@ -87,6 +87,6 @@ class Character {
 //			$out[$skills[$i]]['level'] = $stat[1];
 //			$out[$skills[$i]]['xp'] = $stat[2];
 //		}
-	return $skills;
+//	return $skills;
 	}
 }
