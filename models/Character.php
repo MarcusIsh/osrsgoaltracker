@@ -31,10 +31,11 @@ class Character {
             if($getAll->rowCount() > 0){
                while($row = $getAll->fetch())
                {
+                   $stats = $this->getCharName($row['rsn']);
                    $character[] = array("rsn" => $row['rsn'], "characterType" => $row['characterType']);
                }
             }
-            $stats = $this->getCharName($character->rsn);
+            
             
             return json_encode(array("status" => "success", "character" => $character, "stats" => $stats), true);
         } catch (PDOException $e) { // The authorization query failed verification
