@@ -44,7 +44,7 @@ class Character {
     function getStats($id) {
 		// Create an array of skills
 		
-                $charInfo = "select rsn, characterType from characters where id = ".$id.";";
+                $charInfo = "select rsn, characterType from characters where id = {$id}";
                 $charInfo->execute();
                 
                 $row = $charInfo->fetch();
