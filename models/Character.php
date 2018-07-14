@@ -31,7 +31,7 @@ class Character {
             if($getAll->rowCount() > 0){
                while($row = $getAll->fetch())
                {
-                   $stats = $this->getCharName($row['rsn']);
+                   
                    $character[] = array("rsn" => $row['rsn'], "characterType" => $row['characterType']);
                }
             }
@@ -44,13 +44,13 @@ class Character {
              ));
         }
     }
-    function getCharName($character) {
+    function getCharName($db, $id) {
 		// Create an array of skills
-//		
-//                $charInfo = $db->prepare("select rsn, characterType from characters where id = {$id}");
-//                $charInfo->execute();
-//                
-//                $row = $charInfo->fetch();
+		
+                $charInfo = $db->prepare("select rsn, characterType from characters where id = {$id}");
+                $charInfo->execute();
+                
+                $row = $charInfo->fetch();
                 
                 
                 $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={}&old_stats=1";
