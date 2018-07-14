@@ -53,7 +53,7 @@ class Character {
                 $row = $charInfo->fetch();
                 
                 
-                $url = "https://www.tip.it/runescape/json/hiscore_user?rsn={$row['rsn']}&old_stats=1";
+                $url = "http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player={$row['rsn']}";
 
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
@@ -61,35 +61,35 @@ class Character {
                 $decode = json_decode($result, true);
 		
                 
-//                return $decode['stats'];
-//                $allSkills = $decode->stats;
-                $skills = array();
-//                $out = Array();
-                $skills['rsn'] = $decode['rsn'];
-                
-                foreach($decode['stats'] as $skill => $value){
-                    $skills[$skill]['level'] = $value['level'];
-                    $skills[$skill]['exp'] = $value['exp'];
+////                return $decode['stats'];
+////                $allSkills = $decode->stats;
+//                $skills = array();
+////                $out = Array();
+//                $skills['rsn'] = $decode['rsn'];
+//                
+//                foreach($decode['stats'] as $skill => $value){
+//                    $skills[$skill]['level'] = $value['level'];
+//                    $skills[$skill]['exp'] = $value['exp'];
+//                }
+
+		if (! $hs){
+			return null;
+                }
+		if (strpos($hs, '404 - Page not found')){
+			return null;
                 }
 
-//		if (! $hs){
-//			return null;
-//                }
-//		if (strpos($hs, '404 - Page not found')){
-//			return null;
-//                }
+		$stats = explode("\n", $hs);
 //
-//		$stats = explode("\n", $hs);
-//
-//		// Loop through the skills
-//		for($i = 0; $i<count($skills);$i++) {
-//			// Explode each skill into 3 values - rank, level, exp
-//			$stat = explode(',', $stats[$i]);
-//			$out[$skills[$i]] = Array();
-//			$out[$skills[$i]]['rank'] = $stat[0];
-//			$out[$skills[$i]]['level'] = $stat[1];
-//			$out[$skills[$i]]['xp'] = $stat[2];
-//		}
+		// Loop through the skills
+		for($i = 0; $i<count($skills);$i++) {
+			// Explode each skill into 3 values - rank, level, exp
+			$stat = explode(',', $stats[$i]);
+			$out[$skills[$i]] = Array();
+			$out[$skills[$i]]['rank'] = $stat[0];
+			$out[$skills[$i]]['level'] = $stat[1];
+			$out[$skills[$i]]['xp'] = $stat[2];
+		}
 	return $skills;
 	}
 }
