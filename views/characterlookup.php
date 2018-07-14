@@ -41,7 +41,16 @@ require_once(__DIR__ . '/../config/setup.php');
 </script>
 <center><h3>Add Character to track!</h3></center>
 <div class="row">
-    
+    <div class="col-6">
+        <table>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Exp</th>
+            <tr>
+                  
+            </tr>
+        </table>
+    </div>
 </div>
 
 
