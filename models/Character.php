@@ -60,6 +60,8 @@ class Character {
                 $result = curl_exec($ch);
                 $decode = json_decode($result);
 		
+                
+                return $decode;
 //                $allSkills = $decode->stats;
 //                $skills = array();
 //                $out = Array();
