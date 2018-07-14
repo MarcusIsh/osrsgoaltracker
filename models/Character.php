@@ -52,9 +52,15 @@ class Character {
                 
                 $row = $charInfo->fetch();
                 
-                
-                $url = "http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player={$row['rsn']}";
-
+                if($row['characterType'] == "IronMan"){
+                    $url = "http://services.runescape.com/m=hiscore_oldschool_ironman/index_lite.ws?player={$row['rsn']}";
+                } elseif ($row['characterType'] == "UIM") {
+                    $url = "http://services.runescape.com/m=hiscore_oldschool_ultimate/index_lite.ws?player={$row['rsn']}";
+                } elseif ($row['characterType'] == "HCIM") {
+                   $url = "http://services.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.ws?player={$row['rsn']}";
+                } else {
+                    $url = "http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player={$row['rsn']}";
+                }
 //                $ch = curl_init($url);
 //                curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 //                $result = curl_exec($ch);
