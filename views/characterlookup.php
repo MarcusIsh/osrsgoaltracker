@@ -39,7 +39,7 @@ print_r($stats);
                 });
     }
 </script>
-<center><h3><?php echo $stats['rsn']; ?></h3></center>
+<center><h3></h3></center>
 <div class="row">
     
 </div>
