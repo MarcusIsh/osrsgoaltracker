@@ -54,7 +54,7 @@
              function ajaxFormCall(form) {
                var host = location.protocol+'//'+window.location.hostname;
                var url = host+'/views/'+form+'.php';
-                 var url = "/"+form+"/"+id+"/"+userid;
+//                 var url = "/"+form+"/"+id+"/"+userid;
 //               console.log(host);
 
                $.ajax({
