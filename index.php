@@ -77,18 +77,18 @@ $app->route('POST /login', function() {
     }
 });
 $app->route('POST /register', function() {
-        $username = Flight::request()->data['username-reg'];
-        $email = Flight::request()->data['email-reg'];
-        $password = Flight::request()->data['password-reg'];
-//        $firstname = Flight::request()->data['firstname'];
-//        $lastname = Flight::request()->data['lastname'];
+        $username = Flight::request()->data['username'];
+        $email = Flight::request()->data['email'];
+        $password = Flight::request()->data['password'];
+        $firstname = Flight::request()->data['firstname'];
+        $lastname = Flight::request()->data['lastname'];
         
        
         $db = Flight::db();
         $user = Flight::users();
         
     
-        $return = json_decode($user->register($db, $username, $password, $email), true);
+        $return = json_decode($user->register($db, $username, $password, $email, $firstname,$lastname),true);
         if ($return['status'] == "success") {
             
           Flight::render('registrationsuccessful');
@@ -107,14 +107,11 @@ $app->route('GET /dashboard', function() {
 });
 $app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $db = Flight::db();
-    $character = Flight::character();
-    $json = $character->getAll($db, $id);
-    $allData = json_decode($json ,true);
-    $data = $allData['character'][0];
+    $char = Flight::character();
     
-    $stats = $character->getStats($json);
-//    print_r($stats);
-    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'data' => $data));
+    $stats = $char->getCharName($db, $id);
+    
+    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
         
     
 });
