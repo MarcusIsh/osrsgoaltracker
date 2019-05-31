@@ -78,39 +78,32 @@ print_r($stats);
     <div class='col-md-4'>
         <div class='col-sm-2'>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-        </div>
-        <div class='col-sm-2'>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'></div>        
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Prayer_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Magic_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Runecrafting_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Construction_icon.png'></div>
         </div>
         <div class='col-sm-2'>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Agility_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Herblore_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Thieving_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Crafting_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Fletching_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Slayer_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hunter_icon.png'></div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.pngin'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Smithing_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Fishing_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Cooking_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Firemaking_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Woodcutting_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Farming_icon.png'></div>
         </div>
     </div>
 </div>
