@@ -44,16 +44,16 @@ require_once(__DIR__ . '/../config/setup.php');
     
         <?php
             if($stats['characterType'] == "IronMan"){
-                print "<div id='characterType' class='col-sm-3'><img src='../assets/img/rsicons/Ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+                print "<div id='characterType' class='col-sm-2'><img src='../assets/img/rsicons/Ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
             } elseif ($stats['characterType'] == "UIM") {
-                print "<div id='characterType' class='col-sm-3'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+                print "<div id='characterType' class='col-sm-2'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
             } elseif ($stats['characterType'] == "HCIM") {
-                print "<div id='characterType' class='col-sm-3'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+                print "<div id='characterType' class='col-sm-2'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
             } else {
-                print "<div id='characterType' class='col-sm-3'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png' height='216.5px' width='114.5px'> </div>";
+                print "<div id='characterType' class='col-sm-2'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png' height='216.5px' width='114.5px'> </div>";
             }
         ?> 
-        <div class='col-sm-3'>
+        <div class='col-sm-2'>
             <div>
                 <h3>
                     <?php print $stats['rsn']; ?> 
