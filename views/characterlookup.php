@@ -39,32 +39,30 @@ require_once(__DIR__ . '/../config/setup.php');
                 });
     }
 </script>
-<center><h3></h3></center>
-<div class="container">
-    <div class='row'>
-        <div class='col-sm character-header'>
-            <?php
-                if($stats['characterType'] == "IronMan"){
-                    print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
-                } elseif ($stats['characterType'] == "UIM") {
-                    print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
-                } elseif ($stats['characterType'] == "HCIM") {
-                    print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
-                } else {
-                    print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png' height='216.5px' width='114.5px'> </div>";
-                }
-            ?> 
-        </div>
-        <div class='col-sm character-header'>
-            <div>
-                <h3>
-                    <?php print $stats['rsn']; ?> 
-                </h3>
-            </div>
+<!--<center><h3></h3></center>-->
+<div class='row'>
+    <div class='col-sm character-header'>
+        <?php
+            if($stats['characterType'] == "IronMan"){
+                print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+            } elseif ($stats['characterType'] == "UIM") {
+                print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+            } elseif ($stats['characterType'] == "HCIM") {
+                print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
+            } else {
+                print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png' height='216.5px' width='114.5px'> </div>";
+            }
+        ?> 
+    </div>
+    <div class='col-sm character-header'>
+        <div>
+            <h3>
+                <?php print $stats['rsn']; ?> 
+            </h3>
         </div>
     </div>
-   
 </div>
+   
 
 
 
