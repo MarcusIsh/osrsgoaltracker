@@ -118,15 +118,15 @@
             <!--logo start-->
             <a href="/dashboard" class="logo"><b>07gains.com</b></a>
             <!--logo end-->
-            <div class="nav notify-row" id="top_menu">
-                <!--  notification start -->
+<!--            <div class="nav notify-row" id="top_menu">
+                  notification start 
                 <ul class="nav top-menu">
-                    <!-- settings start -->
+                     settings start 
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-theme">4</span>
-                        </a>
+                        </a>-->
 <!--                        <ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
@@ -257,7 +257,7 @@
                      inbox dropdown end 
                 </ul>-->
                 <!--  notification end -->
-            </div>
+            <!--</div>-->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout">Logout</a></li>
