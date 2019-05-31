@@ -77,7 +77,7 @@ print_r($stats);
 <div class="row">
     <div class='col-md-4'>
         <div class='col-sm-2'>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> &nbsp; <?php $stats['Attack']['level'] ?> </div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> &nbsp; <?php print $stats['Attack']['level'] ?> </div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'></div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'></div>        
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'></div>
