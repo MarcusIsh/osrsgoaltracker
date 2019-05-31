@@ -13,7 +13,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
     body{
-        background-image: 'bg07gt.png ';
+        background-image: '../assets/img/rsicons/bg07gt.png ';
     }
     
 </style>
