@@ -228,3 +228,9 @@ label {
 .character-header {
     margin-left: 20px;
 }
+
+.site-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
