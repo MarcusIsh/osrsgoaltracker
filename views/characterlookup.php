@@ -61,7 +61,7 @@ print_r($stats);
             </div>
             <div>
                 <h3>
-                   Total Level: <?php print $stats['Overall']['level']; ?> 
+                   Total: <?php print $stats['Overall']['level']; ?> 
                 </h3>
             </div>
         </div>
