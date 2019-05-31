@@ -7,10 +7,7 @@
  */
 //print_r($_SESSION);
 ?>
-
-                  <div class="col-lg-12 main-chart">
-                  
-                  	<div class="row mtbox">
+        <div class="row">
                             <h1>Thank you for joining O7gains.com(ALPHA)</h1> </br>
                             07gains is an Old School RuneScape goal tracking application. Here you will be able to track multiple characters and set goals for them.</br>
                             Be it stats, items, quest or achievements. </br>
@@ -25,6 +22,9 @@
                             Thanks,</br>
                             Ishadaha
                         </div>
+                  <div class="col-lg-12 main-chart">
+                  
+                  	
                   
                       
                       <div class="row mt">
