@@ -53,7 +53,7 @@ print_r($stats);
                 print "<div id='characterType' class='col-sm-1'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png' height='216.5px' width='114.5px'> </div>";
             }
         ?> 
-        <div class='col-sm-1'>
+        <div class='col-sm-2'>
             <div>
                 <h3>
                     <?php print $stats['rsn']; ?> 
