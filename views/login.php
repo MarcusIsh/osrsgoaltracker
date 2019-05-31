@@ -27,6 +27,9 @@
     </div>-->
    <div class="row">
     <div class="col-md-6 col-md-offset-3">
+        <img src='../assets/img/rsicons/07gains-logo.png'></img>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
       <div class="panel panel-login">
         <div class="panel-body">
           <div class="row">
