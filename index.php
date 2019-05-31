@@ -80,8 +80,8 @@ $app->route('POST /register', function() {
         $username = Flight::request()->data['username'];
         $email = Flight::request()->data['email'];
         $password = Flight::request()->data['password'];
-        $firstname = Flight::request()->data['firstname'];
-        $lastname = Flight::request()->data['lastname'];
+        $firstname = '';
+        $lastname = '';
         
        
         $db = Flight::db();
