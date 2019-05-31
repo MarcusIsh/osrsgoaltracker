@@ -47,13 +47,19 @@
                 <h2>REGISTER</h2>
                 <?php  echo (isset($errorMessage)) ? "<h5 class=\"alert alert-danger\">" . $errorMessage . "</h5>" : "" ?>
                   <div class="form-group">
-                    <input type="text" name="username" id="username-reg" tabindex="1" class="form-control" placeholder="Username" value="">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                   </div>
                   <div class="form-group">
-                    <input type="email" name="email" id="email-reg" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" id="password-reg" tabindex="2" class="form-control" placeholder="Password">
+                    <input type="text" name="firstname" id="firstname" tabindex="1" class="form-control" placeholder="firstname">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="lastname">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                   </div>
                   <div class="form-group">
                     <div class="row">
