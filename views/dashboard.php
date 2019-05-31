@@ -19,9 +19,11 @@
                 Also, while this site is secured using SSL and strong password algorithms and a private database, it is best that you do NOT use your password affiliated with RuneScape. PERIOD. <br>
                 </br>
                 Please feel free to contact me ingame(rsn:M Y S Q L, fe Raekwon) or on twitter <a href='https://twitter.com/Ishadaha'>@ishadaha</a> and I will get back to you ASAP.</br>
-
+                </br>
+                </br>
+                </br>
                 Thanks,</br>
-                Ishadaha
+                <b>Ishadaha</b>
             </span>
         </div>
                   
