@@ -77,33 +77,33 @@ print_r($stats);
 <div class="row">
     <div class='col-md-4'>
         <div class='col-sm-2'>
-            <div style='text-align: center;'class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> &nbsp; <?php print $stats['Attack']['level'] ?> </div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'></div>        
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Prayer_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Magic_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Runecrafting_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Construction_icon.png'></div>
+            <div style='text-align: center;'class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> <span style='font-size: x-large;'><?php print $stats['Attack']['level'] ?> </span> </div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'> <span style='font-size: x-large;'><?php print $stats['Strength']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'> <span style='font-size: x-large;'><?php print $stats['Defence']['level'] ?> </span></div>        
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'> <span style='font-size: x-large;'><?php print $stats['Ranged']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Prayer_icon.png'> <span style='font-size: x-large;'><?php print $stats['Prayer']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Magic_icon.png'> <span style='font-size: x-large;'><?php print $stats['Magic']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Runecrafting_icon.png'> <span style='font-size: x-large;'><?php print $stats['Runecraft']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Construction_icon.png'> <span style='font-size: x-large;'><?php print $stats['Construction']['level'] ?> </span></div>
         </div>
         <div class='col-sm-2'>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Agility_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Herblore_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Thieving_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Crafting_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Fletching_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Slayer_icon.png'></div>
-            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Hunter_icon.png'></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Hitpoints_icon.png'> <span style='font-size: x-large;'><?php print $stats['Hitpoints']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Agility_icon.png'> <span style='font-size: x-large;'><?php print $stats['Agility']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Herblore_icon.png'> <span style='font-size: x-large;'><?php print $stats['Herblore']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Thieving_icon.png'> <span style='font-size: x-large;'><?php print $stats['Thieving']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Crafting_icon.png'> <span style='font-size: x-large;'><?php print $stats['Crafting']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Fletching_icon.png'> <span style='font-size: x-large;'><?php print $stats['Fletching']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Slayer_icon.png'> <span style='font-size: x-large;'><?php print $stats['Slayer']['level'] ?> </span></div>
+            <div class='col-sm-2 skill-col2'><img src='../assets/img/rsicons/Hunter_icon.png'> <span style='font-size: x-large;'><?php print $stats['Hunter']['level'] ?> </span></div>
         </div>
         <div class='col-sm-2'>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Smithing_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Fishing_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Cooking_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Firemaking_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Woodcutting_icon.png'></div>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Farming_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'> <span style='font-size: x-large;'><?php print $stats['Mining']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Smithing_icon.png'> <span style='font-size: x-large;'><?php print $stats['Smithing']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Fishing_icon.png'> <span style='font-size: x-large;'><?php print $stats['Fishing']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Cooking_icon.png'> <span style='font-size: x-large;'><?php print $stats['Cooking']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Firemaking_icon.png'> <span style='font-size: x-large;'><?php print $stats['Firemaking']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Woodcutting_icon.png'> <span style='font-size: x-large;'><?php print $stats['Woodcutting']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Farming_icon.png'> <span style='font-size: x-large;'><?php print $stats['Farming']['level'] ?> </span></div>
         </div>
     </div>
 </div>
