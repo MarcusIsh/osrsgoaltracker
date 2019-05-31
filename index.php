@@ -3,9 +3,9 @@
 
 use \Firebase\JWT\JWT;
 
-//require 'vendor/autoload.php';
-//require 'config/setup.php';
-//use flight\Engine;
+require 'vendor/autoload.php';
+require 'config/setup.php';
+use flight\Engine;
 //
 //$app = new Engine();
 //
