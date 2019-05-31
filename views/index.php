@@ -127,7 +127,7 @@
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-theme">4</span>
                         </a>
-                        <ul class="dropdown-menu extended tasks-bar">
+<!--                        <ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
                                 <p class="green">You have 4 pending tasks</p>
@@ -189,8 +189,8 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- settings end -->
-                    <!-- inbox dropdown start-->
+                     settings end 
+                     inbox dropdown start
                     <li id="header_inbox_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
                             <i class="fa fa-envelope-o"></i>
@@ -254,8 +254,8 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- inbox dropdown end -->
-                </ul>
+                     inbox dropdown end 
+                </ul>-->
                 <!--  notification end -->
             </div>
             <div class="top-menu">
