@@ -358,7 +358,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2018 - 07gains.com
+              2019 - 07gains.com
 <!--              <a href="index.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>-->
