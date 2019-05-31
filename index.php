@@ -105,16 +105,16 @@ $app->route('GET /dashboard', function() {
     //}
     
 });
-$app->route('/characterlookup/@id/@userID', function($id, $userID) {
-    $db = Flight::db();
-    $char = Flight::character();
-    
-    $stats = $char->getCharName($db, $id);
-    
-    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
-        
-    
-});
+//$app->route('/characterlookup/@id/@userID', function($id, $userID) {
+//    $db = Flight::db();
+//    $char = Flight::character();
+//    
+//    $stats = $char->getCharName($db, $id);
+//    
+//    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
+//        
+//    
+//});
 $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
     unset($_SESSION['userid']);
