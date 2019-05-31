@@ -77,9 +77,9 @@ $app->route('POST /login', function() {
     }
 });
 $app->route('POST /register', function() {
-        $username = Flight::request()->data['username'];
-        $email = Flight::request()->data['email'];
-        $password = Flight::request()->data['password'];
+        $username = Flight::request()->data['username-reg'];
+        $email = Flight::request()->data['email-reg'];
+        $password = Flight::request()->data['password-reg'];
 //        $firstname = Flight::request()->data['firstname'];
 //        $lastname = Flight::request()->data['lastname'];
         
