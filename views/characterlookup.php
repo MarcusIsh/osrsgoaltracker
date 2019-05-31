@@ -55,6 +55,13 @@ print_r($stats);
                 }
             ?> 
         </div>
+        <div class='col-sm'>
+            <div>
+                <h3>
+                    <?php print $stats['rsn']; ?> 
+                </h3>
+            </div>
+        </div>
     </div>
    
 </div>
