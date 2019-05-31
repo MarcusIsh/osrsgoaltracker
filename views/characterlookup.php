@@ -41,7 +41,9 @@ print_r($stats);
 </script>
 <center><h3></h3></center>
 <div class="row">
-    
+    <?php
+        print $stats['rsn']
+    ?> 
 </div>
 
 
