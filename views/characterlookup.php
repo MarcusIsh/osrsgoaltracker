@@ -40,7 +40,7 @@ require_once(__DIR__ . '/../config/setup.php');
     }
 </script>
 <!--<center><h3></h3></center>-->
-<div class='row'>
+<div class='row character-header'>
     <div class='col-sm'>
         <?php
             if($stats['characterType'] == "IronMan"){
