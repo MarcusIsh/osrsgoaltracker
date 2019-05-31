@@ -77,7 +77,17 @@ print_r($stats);
 <div class="row">
     <div class='col-md-4'>
         <div class='col-sm-2'>
-            <div style='text-align: center;'class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> <span style='font-size: x-large;'><?php print $stats['Attack']['level'] ?> </span> </div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> <span style='font-size: x-large;'><?php print $stats['Attack']['level'] ?> </span> </div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'> <span style='font-size: x-large;'><?php print $stats['Strength']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'> <span style='font-size: x-large;'><?php print $stats['Defence']['level'] ?> </span></div>        
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'> <span style='font-size: x-large;'><?php print $stats['Ranged']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Prayer_icon.png'> <span style='font-size: x-large;'><?php print $stats['Prayer']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Magic_icon.png'> <span style='font-size: x-large;'><?php print $stats['Magic']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Runecrafting_icon.png'> <span style='font-size: x-large;'><?php print $stats['Runecraft']['level'] ?> </span></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Construction_icon.png'> <span style='font-size: x-large;'><?php print $stats['Construction']['level'] ?> </span></div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'> <span style='font-size: x-large;'><?php print $stats['Attack']['level'] ?> </span> </div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Strength_icon.png'> <span style='font-size: x-large;'><?php print $stats['Strength']['level'] ?> </span></div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Defence_icon.png'> <span style='font-size: x-large;'><?php print $stats['Defence']['level'] ?> </span></div>        
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Ranged_icon.png'> <span style='font-size: x-large;'><?php print $stats['Ranged']['level'] ?> </span></div>
