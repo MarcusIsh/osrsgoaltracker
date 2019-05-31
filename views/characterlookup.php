@@ -74,6 +74,7 @@ require_once(__DIR__ . '/../config/setup.php');
         </div>
     </div>-->
 </div>
+<div class='row'>&nbsp;</div>
 <div class="row">
     <div class='col-md-4'>
         <div class='col-sm-2'>
