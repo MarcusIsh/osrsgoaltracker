@@ -6,7 +6,7 @@ use \Firebase\JWT\JWT;
 require __DIR__ . '/vendor/autoload.php';
 require 'config/setup.php';
 use flight\Engine;
-
+print_r($_SESSION);
 $app = new Engine();
 
 $app->route('/', function(){
