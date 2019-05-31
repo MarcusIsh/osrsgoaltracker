@@ -42,7 +42,7 @@ require_once(__DIR__ . '/../config/setup.php');
 <center><h3></h3></center>
 <div class="container">
     <div class='row'>
-        <div class='col-sm'>
+        <div class='col-sm character-header'>
             <?php
                 if($stats['characterType'] == "IronMan"){
                     print "<div id='characterType' class='col-sm'><img src='../assets/img/rsicons/Ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
@@ -55,7 +55,7 @@ require_once(__DIR__ . '/../config/setup.php');
                 }
             ?> 
         </div>
-        <div class='col-sm'>
+        <div class='col-sm character-header'>
             <div>
                 <h3>
                     <?php print $stats['rsn']; ?> 
