@@ -77,40 +77,40 @@ print_r($stats);
 <div class="row">
     <div class='col-md-4'>
         <div class='col-sm-2'>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
         </div>
         <div class='col-sm-2'>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
         </div>
         <div class='col-sm-2'>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
         </div>
     </div>
 </div>
