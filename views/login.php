@@ -26,7 +26,7 @@
         <video src="assets/videos/webvid.mp4" autoplay="true"></video>
     </div>-->
    <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3" style='background-color:rbga(0, 0, 0, .25);'>
         <img src='../assets/img/rsicons/07gains-logo.png'></img>
     </div>
     <div class="col-md-6 col-md-offset-3">
