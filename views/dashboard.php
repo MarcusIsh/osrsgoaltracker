@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-print_r($_SESSION);
+//print_r($_SESSION);
 ?>
 
                   <div class="col-lg-12 main-chart">
