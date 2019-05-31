@@ -80,15 +80,15 @@ $app->route('POST /register', function() {
         $username = Flight::request()->data['username'];
         $email = Flight::request()->data['email'];
         $password = Flight::request()->data['password'];
-        $firstname = Flight::request()->data['firstname'];
-        $lastname = Flight::request()->data['lastname'];
+//        $firstname = Flight::request()->data['firstname'];
+//        $lastname = Flight::request()->data['lastname'];
         
        
         $db = Flight::db();
         $user = Flight::users();
         
     
-        $return = json_decode($user->register($db, $username, $password, $email, $firstname,$lastname),true);
+        $return = json_decode($user->register($db, $username, $password, $email),true);
         if ($return['status'] == "success") {
             
           Flight::render('registrationsuccessful');
