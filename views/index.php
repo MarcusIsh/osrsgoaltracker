@@ -112,7 +112,7 @@
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
       <!--header start-->
-      <header style="background-color: #444c57" class="header black-bg">
+      <header class="header black-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
@@ -358,10 +358,10 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is
-              <a href="index.html#" class="go-top">
+              2018 - 07gains.com
+<!--              <a href="index.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
-              </a>
+              </a>-->
           </div>
       </footer>
       <!--footer end-->
