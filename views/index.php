@@ -286,7 +286,7 @@
                   </li>
 
                   <?php
-                    $characterCount = $db->prepare("select * from characters where userID = {$_SESSION['userid']} and active = 'Y'");
+                    $characterCount = $db->prepare("select * from characters where userId = {$_SESSION['userid']} and active = 'Y'");
                     $characterCount->execute();
                     $cFound = array();
                     $i = 0;
