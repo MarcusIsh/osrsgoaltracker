@@ -7,7 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-//print_r($stats);
+print_r($stats);
 ?>
 <script>
     function getAllCharInfo() {
@@ -61,7 +61,7 @@ require_once(__DIR__ . '/../config/setup.php');
             </div>
             <div>
                 <h3>
-                    <?php print $stats['Overall']; ?> 
+                    <?php print $stats['overall']; ?> 
                 </h3>
             </div>
         </div>
