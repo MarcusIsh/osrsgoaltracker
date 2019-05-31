@@ -2241,3 +2241,29 @@ label {
 }
 
 
+
+.character-header {
+    margin-left: 20px;
+}
+
+.site-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.skill img{
+    padding-bottom: 17px;
+    float: left;
+}
+.skill span{
+   padding-left: 10px;
+}
+
+.skill-col2 img{
+    padding-bottom: 18px;
+    float: left;
+}
+.skill-col2 span{
+   padding-left: 10px;
+}
