@@ -1,7 +1,7 @@
 <?php
 
 
-use \Firebase\JWT\JWT;
+//use \Firebase\JWT\JWT;
 
 require __DIR__ . '/vendor/autoload.php';
 require 'config/setup.php';
