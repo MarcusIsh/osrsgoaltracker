@@ -61,7 +61,7 @@ require_once(__DIR__ . '/../config/setup.php');
             </div>
             <div>
                 <h3>
-                    <?php print $stats['total']; ?> 
+                    <?php print $stats['Overall']->total; ?> 
                 </h3>
             </div>
         </div>
