@@ -239,8 +239,14 @@ label {
     padding-bottom: 17px;
     float: left;
 }
+.skill span{
+   padding-left: 10px;
+}
 
 .skill-col2 img{
     padding-bottom: 17px;
     float: left;
+}
+.skill-col2 span{
+   padding-left: 10px;
 }
