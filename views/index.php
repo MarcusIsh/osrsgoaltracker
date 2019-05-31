@@ -11,8 +11,9 @@
         $userCount->execute();
         $row = $userCount->fetchAll();
         for ($u=0;$u<count($row);$u++) {
-                $firstName = $row[$u]['firstname'];
-                $lastName = $row[$u]['lastname'];
+//                $firstName = $row[$u]['firstname'];
+//                $lastName = $row[$u]['lastname'];
+            $username = $row[$u]['username'];
         }
 
         $jwt = $_SESSION['jwt'];
@@ -276,7 +277,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"><?php echo $firstName . " " . $lastName ?></h5>
+              	  <h5 class="centered"><?php echo $username?></h5>
               	  	
                   <li class="mt">
                       <a class="active" href="dashboard">
