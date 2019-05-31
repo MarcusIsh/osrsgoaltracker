@@ -12,7 +12,7 @@ include(__DIR__.'/../../configs/07goaltracker_db.php');
 require_once(__DIR__.'/../models/Users.php');
 require_once(__DIR__.'/../models/Character.php');
 
-Flight::register('db', 'PDO', array('mysql:host=' . DBHOST . ';dbname=' . DBNAME, DBUSER, DBPASS ), function($db){
+Flight::register('db', 'PDO', array('mysql:host=' . $DBHOST . ';dbname=' . $DBNAME, $DBUSER, $DBPASS ), function($db){
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 });
