@@ -49,7 +49,7 @@ print_r($stats);
                 } elseif ($stats['characterType'] == "UIM") {
                     print "<div id='characterType'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png'> </div>";
                 } elseif ($stats['characterType'] == "HCIM") {
-                    print "<div id='characterType'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='108px' width='57'> </div>";
+                    print "<div id='characterType'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png' height='216.5px' width='114.5px'> </div>";
                 } else {
                     print "<div id='characterType'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png'> </div>";
                 }
