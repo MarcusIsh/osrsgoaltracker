@@ -77,9 +77,9 @@ print_r($stats);
 <div class="row">
     <div class='col-sm-6'>
         <div class='col-sm-3'>
-            <div class='col-sm-1'><img src='../assets/img/rsicons/Attack_icon.png'></div>
-            <div class='col-sm-1'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
-            <div class='col-sm-1'><img src='../assets/img/rsicons/Mining_icon.png'></div>
+            <div class='col-sm-2'><img src='../assets/img/rsicons/Attack_icon.png'></div>
+            <div class='col-sm-2'><img src='../assets/img/rsicons/Hitpoints_icon.png'></div>
+            <div class='col-sm-2'><img src='../assets/img/rsicons/Mining_icon.png'></div>
         </div>
     </div>
 </div>
