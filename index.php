@@ -105,7 +105,7 @@ $app->route('GET /dashboard', function() {
     //}
     
 });
-$app->route('/characterlookup/@id/@userID', function($id) {
+$app->route('/characterlookup/@id/@userID', function($id, $userID) {
     $db = Flight::db();
     $char = Flight::character();
     
