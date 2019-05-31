@@ -97,7 +97,7 @@ print_r($stats);
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Hunter_icon.png'></div>
         </div>
         <div class='col-sm-2'>
-            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.pngin'></div>
+            <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Mining_icon.png'></div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Smithing_icon.png'></div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Fishing_icon.png'></div>
             <div class='col-sm-2 skill'><img src='../assets/img/rsicons/Cooking_icon.png'></div>
