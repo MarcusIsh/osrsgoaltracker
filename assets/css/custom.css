@@ -237,8 +237,10 @@ label {
 }
 .skill img{
     padding-bottom: 17px;
+    float: left;
 }
 
 .skill-col2 img{
     padding-bottom: 17px;
+    float: left;
 }
