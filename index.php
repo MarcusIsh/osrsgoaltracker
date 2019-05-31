@@ -60,7 +60,7 @@ $app->route('POST /login', function() {
                           $jwt = JWT::encode(
                                     $data, //Data to be encoded in the JWT
                                     $secretKey, // The signing key
-                                    ALGORITHM // The algorithm to use for encoding
+                                    HS256 // The algorithm to use for encoding
                           );
 
                          $_SESSION['userid'] = $return['userid'];
