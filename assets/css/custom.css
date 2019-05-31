@@ -235,7 +235,6 @@ label {
     width: 100%;
     z-index: -1;
 }
-
-#rsn{
-    font-size: 48px;
+.skill img{
+    padding-bottom: 5px;
 }
