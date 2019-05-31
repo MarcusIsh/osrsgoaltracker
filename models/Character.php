@@ -101,7 +101,7 @@ class Character {
 			$out[$skills[$i]]['level'] = $stat[1];
 			$out[$skills[$i]]['xp'] = $stat[2];
 		}
-                $out[rsn] = $row['rsn'];
+                $out['rsn'] = $row['rsn'];
 	return $out;
 	}
 }
