@@ -7,7 +7,7 @@
  */
 
 class Users {
-    public function register($db, $username, $password, $email) {
+    public function register($db, $username, $password, $email ) {
         try {
             // check if username exists
             $emailCheck = $db->prepare("select * from users where email = '" . $email . "'");
