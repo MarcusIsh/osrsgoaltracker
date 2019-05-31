@@ -40,7 +40,22 @@ print_r($stats);
     }
 </script>
 <center><h3></h3></center>
-<div class="row">
+<div class="container">
+    <div class='row'>
+        <div class='col-sm'>
+            <?php
+                if($stats['characterType'] == "IronMan"){
+                    print "<div id='characterType'><img src='../assets/img/rsicons/Ironman_helm_detail.png'> </div>";
+                } elseif ($stats['characterType'] == "UIM") {
+                    print "<div id='characterType'><img src='../assets/img/rsicons/Ultimate_ironman_helm_detail.png'> </div>";
+                } elseif ($stats['characterType'] == "HCIM") {
+                    print "<div id='characterType'><img src='../assets/img/rsicons/Hardcore_ironman_helm_detail.png'> </div>";
+                } else {
+                    print "<div id='characterType'><img src='../assets/img/rsicons/Helm_of_neitiznot_detail.png'> </div>";
+                }
+            ?> 
+        </div>
+    </div>
    
 </div>
 
