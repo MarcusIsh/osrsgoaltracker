@@ -11,43 +11,20 @@
                   <div class="col-lg-12 main-chart">
                   
                   	<div class="row mtbox">
-                  		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
-                  			<div class="box1">
-					  			<span class="li_heart"></span>
-					  			<h3>933</h3>
-                  			</div>
-					  			<p>933 People liked your page the last 24hs. Whoohoo!</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_cloud"></span>
-					  			<h3>+48</h3>
-                  			</div>
-					  			<p>48 New files were added in your cloud storage.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_stack"></span>
-					  			<h3>23</h3>
-                  			</div>
-					  			<p>You have 23 unread messages in your inbox.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_news"></span>
-					  			<h3>+10</h3>
-                  			</div>
-					  			<p>More than 10 news were added in your reader.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_data"></span>
-					  			<h3>OK!</h3>
-                  			</div>
-					  			<p>Your server is working perfectly. Relax & enjoy.</p>
-                  		</div>
-                  	
-                  	</div><!-- /row mt -->	
+                            <h1>Thank you for joining O7gains.com(ALPHA)</h1> </br>
+                            07gains is an Old School RuneScape goal tracking application. Here you will be able to track multiple characters and set goals for them.
+                            Be it stats, items, quest or achievements. </br>
+                            
+                            Please note that this is an alpha build and somethings will not work or make sense. Some features will be here oneday and gone the next. </br>
+                            I am currently the only developer working on this project, and I am doing it for fun. If you have a good suggestion, I will try to implement it the best I can. </br>
+                            
+                            Also, while this site is secured using SSL and strong password algorithms and a private database, it is best that you do NOT use your password affiliated with RuneScape. PERIOD. <br>
+                            
+                            Please feel free to contact me ingame(rsn:M Y S Q L, fe Raekwon) or on twitter <a href='https://twitter.com/Ishadaha'>@ishadaha</a> and I will get back to you ASAP.
+                            
+                            Thanks,
+                            Ishadaha
+                        </div>
                   
                       
                       <div class="row mt">
