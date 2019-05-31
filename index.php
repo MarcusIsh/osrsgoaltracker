@@ -105,34 +105,34 @@ $app->route('GET /dashboard', function() {
     //}
     
 });
-//$app->route('/characterlookup/@id/@userID', function($id, $userID) {
-//    $db = Flight::db();
-//    $char = Flight::character();
-//    
-//    $stats = $char->getCharName($db, $id);
-//    
-//    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
-//        
-//    
-//});
+$app->route('/characterlookup/@id/@userID', function($id) {
+    $db = Flight::db();
+    $char = Flight::character();
+    
+    $stats = $char->getCharName($db, $id);
+    
+    Flight::render('characterlookup', array('id' => $id, 'userID' => $userID, 'stats' => $stats));
+        
+    
+});
 $app->route('GET /logout', function() {
     unset($_SESSION['jwt']);
     unset($_SESSION['userid']);
     Flight::redirect('login');
     exit();
 });
-//$app->route('POST /addNewChar', function() {
-//    $method = Flight::request()->data->method;
-//    $data = Flight::request()->data->data;
-//    $db = Flight::db();
-//    $character = Flight::character();
-//    print_r($_SESSION);
-//    switch ($method) {
-//        case "addNew":
-//            $result = $character->addNew($db, $data);
-//            break;
-//        
-//    }
-//    echo $result;
-//});
+$app->route('POST /addNewChar', function() {
+    $method = Flight::request()->data->method;
+    $data = Flight::request()->data->data;
+    $db = Flight::db();
+    $character = Flight::character();
+    print_r($_SESSION);
+    switch ($method) {
+        case "addNew":
+            $result = $character->addNew($db, $data);
+            break;
+        
+    }
+    echo $result;
+});
 $app->start();
