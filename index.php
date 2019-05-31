@@ -5,7 +5,7 @@
 
 //require 'vendor/autoload.php';
 //require 'config/setup.php';
-use flight\Engine;
+//use flight\Engine;
 
 $app = new Engine();
 
