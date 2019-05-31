@@ -55,9 +55,9 @@ print_r($stats);
         ?> 
         <div class='col-sm-2'>
             <div>
-                <h3>
+                <h1>
                     <?php print $stats['rsn']; ?> 
-                </h3>
+                </h1>
             </div>
             <div>
                 <h3>
