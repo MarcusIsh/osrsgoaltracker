@@ -11,6 +11,12 @@
 <link href="assets/css/custom.css"  rel="stylesheet" id="custom">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+    body{
+        background-image: 'bg07gt.png ';
+    }
+    
+</style>
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
