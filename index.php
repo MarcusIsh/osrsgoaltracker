@@ -39,7 +39,7 @@ $app->route('POST /login', function() {
                             $issuedAt   = time();
                             $notBefore  = $issuedAt + 10;  //Adding 10 seconds
                             $expire     = $notBefore + 7200; // Adding 60 seconds
-                            $serverName = HTTP_HOST; /// set your domain name
+                            $serverName = $_SERVER['HTTP_HOST']; /// set your domain name
 
                             /*
                              * Create the token as an array
