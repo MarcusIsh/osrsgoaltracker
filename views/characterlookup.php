@@ -7,7 +7,7 @@ if (!defined(__DIR__))
     define(__DIR__, dirname(__FILE__));
 require_once(__DIR__ . '/../config/setup.php');
 
-print_r($stats[0]->rank);
+print_r($stats[rank]);
 ?>
 <script>
     function getAllCharInfo() {
