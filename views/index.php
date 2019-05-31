@@ -297,7 +297,7 @@
                        foreach($cFound as $key => $value){
 //                           print_r($value);
                             $char = '<li class="mt">
-                                            <a class="" onclick=\'ajaxFormCallCharacter("characterlookup",'.$value['id'].','.$value['userID'].');\'>
+                                            <a class="" onclick=\'ajaxFormCallCharacter("characterlookup",'.$value['id'].','.$value['userId'].');\'>
                                                 <i class="fa fa-check"></i>
                                                 <span>'. $value['rsn'] .'</span>
                                             </a>
