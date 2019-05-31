@@ -121,18 +121,18 @@ $app->route('GET /logout', function() {
     Flight::redirect('login');
     exit();
 });
-$app->route('POST /addNewChar', function() {
-    $method = Flight::request()->data->method;
-    $data = Flight::request()->data->data;
-    $db = Flight::db();
-    $character = Flight::character();
-    print_r($_SESSION);
-    switch ($method) {
-        case "addNew":
-            $result = $character->addNew($db, $data);
-            break;
-        
-    }
-    echo $result;
-});
+//$app->route('POST /addNewChar', function() {
+//    $method = Flight::request()->data->method;
+//    $data = Flight::request()->data->data;
+//    $db = Flight::db();
+//    $character = Flight::character();
+//    print_r($_SESSION);
+//    switch ($method) {
+//        case "addNew":
+//            $result = $character->addNew($db, $data);
+//            break;
+//        
+//    }
+//    echo $result;
+//});
 $app->start();
