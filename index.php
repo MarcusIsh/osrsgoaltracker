@@ -88,7 +88,7 @@ $app->route('POST /register', function() {
         $user = Flight::users();
         
     
-        $return = json_decode($user->register($db, $username, $password, $email),true);
+        $return = json_decode($user->register($db, $username, $password, $email), true);
         if ($return['status'] == "success") {
             
           Flight::render('registrationsuccessful');
