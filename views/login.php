@@ -15,6 +15,7 @@
     body{
         background-image: '../assets/img/rsicons/bg07gt.png ';
         background-size: 100%;
+        background-repeat: none; 
     }
     
 </style>
